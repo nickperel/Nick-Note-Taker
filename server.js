@@ -37,6 +37,15 @@ app.post('/api/notes', (req, res) => {
     });
 });
 
+app.delete('/api/notes/:id', (req, res) => {
+    const params = req.params.id;
+    const deleteArr = db_notes.filter(arrayContents => arrayContents.id != params);
+    console.log(deleteArr);
+    fs.writeFile('./db/db.json', JSON.stringify(deleteArr), () => {
+        res.send('Deleted Successfully!');
+    });
+});
+
 app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname, './public/index.html'));
 });

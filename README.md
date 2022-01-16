@@ -12,6 +12,13 @@
   * [Contributing](#contributing)
   * [License Info](#license-info)
 
+  ## Screenshot of Application
+  
+  ![enter image description here](https://www.dropbox.com/s/cm0ei6s0qn2tl3f/nick-note-taker%20preview.png?raw=1)
+
+  ## Link to Deployed Application
+  * https://nick-note-taker.herokuapp.com/ 
+
   ### Installation
   
   * None, you just need to go to the live link since this app is deployed to Heroku on a live server!
